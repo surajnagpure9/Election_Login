@@ -1,0 +1,80 @@
+<html>
+
+<head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+input[type=email],input[type=password],input[type=submit],input[type=text],input[type=button]
+		{
+  width: 70%;
+  padding: 10px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  /*box-sizing: border-box;*/
+}
+
+
+</style>
+<script type="text/javascript">
+  
+  function login()
+  {
+
+  
+ var z=document.getElementById("demo").value;
+ var y=document.getElementById("pass").value;
+ 
+  if (z=="surajnagpure9@gmail.com" &&  y=="1234" || z=="surajnagpure1@gmail.com" && y=="12345" || z=="surajnagpure3@gmail.com" && y=="123456" || z=="surajnagpure2@gmail.com" && y=="1234567" || z=="surajnagpure4@gmail.com" && y=="12345678")
+  {
+ 
+	open("VERIFY.html")	
+  }
+				else{
+				alert("you are not admin user"); 
+				}
+  }
+  
+ </script>
+</head>
+<body>
+  
+  
+  <div id="one" ><img src="one2.jpg" class="img-responsive" height="60%" width="100%;"/>
+  </div>
+  
+  		
+  
+ 
+
+<h2>Admin Page<h2>
+
+ 
+   <form>
+    <div class="form-group">
+      <label for="uname">Username:</label>
+      <input type="text" class="form-control" id="demo" placeholder="Enter username" name="uname" required>
+     
+      
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pass" placeholder="Enter password" name="pswd" required>
+
+    </div>
+  <input type="button" class="btn btn-primary" onclick="login()"  value="LOGIN"/>
+
+   
+  </form>
+ 
+ 
+ 
+ 
+  </body>
+  
+  
+  </html>
